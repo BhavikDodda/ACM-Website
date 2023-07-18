@@ -28,7 +28,7 @@ export default function About({ vinayaka, sparrowhawk, acm }) {
           </h1>
         </div>
 
-        <div className="grid grid-cols-3">
+        <div className="xl:grid xl:grid-cols-3">
           <MDXLayoutRenderer
             layout={vinayaka.frontMatter.layout || DEFAULT_LAYOUT}
             mdxSource={vinayaka.mdxSource}
