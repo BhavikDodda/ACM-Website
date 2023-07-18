@@ -1,5 +1,6 @@
 ---
 name: Sparrow Hawk
+shortname: sparrowhawk
 avatar: /static/images/sparrowhawk-avatar.jpg
 occupation: Wizard of Earthsea
 company: Earthsea

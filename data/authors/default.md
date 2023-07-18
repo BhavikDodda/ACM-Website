@@ -1,7 +1,7 @@
 ---
-name: Association of Computing and Machinery
+name: ACM NIT Surat
 avatar: /static/images/acm-logo.png
-# occupation: Student Chapter
+occupation: Student Chapter
 company: Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat
 email: acmnitsurat@gmail.com
 twitter: https://twitter.com/Twitter

@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: 'ACM NIT Surat',
-  author: 'Vinayaka Iyer',
+  author: 'ACM NIT Surat',
   headerTitle: 'ACM NIT Surat',
   description: "ACM NIT Surat's Official Blog.",
   language: 'en-us',
