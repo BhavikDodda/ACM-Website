@@ -1,16 +1,15 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
+name: Association of Computing and Machinery
+avatar: /static/images/acm-logo.png
+# occupation: Student Chapter
+company: Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat
+email: acmnitsurat@gmail.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
 github: https://github.com
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+ACM is an International Learned Society for Computing. It has its chapters in various institutes. NIT Surat ACM student chapter is one of them. ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Founded in 2005, the chapter has been a centre for various learning, fun, and productive activities. Be it coding challenges, hackathons, quizzes, or application development, the chapter has done its best. The activities of the chapter are widely acknowledged in the institute and keenly looked for. Massive turnout at every event shows the range of popularity the chapter has.
+The bar is being raised year after year. With announcement of Epiphany, CTF! in Quest, and other challenges as open-for-all contests, the chapter is aiming nationwide recognition.
