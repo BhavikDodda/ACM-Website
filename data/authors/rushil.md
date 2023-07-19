@@ -1,7 +1,7 @@
 ---
 name: Rushil Jariwala
 shortname: rushil
-avatar: /static/images/avatar.png
+avatar: /static/images/rushil.jpg
 occupation: Secretary
 company: SVNIT Surat, Gujarat
 email: rkjjariwala@gmail.com
