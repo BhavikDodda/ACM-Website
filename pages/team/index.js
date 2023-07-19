@@ -17,7 +17,9 @@ export async function getStaticProps() {
   const yatra = await getFileBySlug('authors', ['yatra'])
   const raj = await getFileBySlug('authors', ['raj'])
 
-  return { props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved, yatra, raj } }
+  return {
+    props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved, yatra, raj },
+  }
 }
 
 export default function About({
@@ -34,11 +36,6 @@ export default function About({
 }) {
   return (
     <>
-      <PageSEO
-        title={'About ACM Team 2023-2024'}
-        description={'about the ACM NIT Surat Core team 2023-2024'}
-      />
-
       <div className="divide-y divide-gray-700">
         <div className="space-y-2 py-4 md:space-y-5">
           <h1 className="text-xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -97,6 +94,10 @@ export default function About({
             layout={yatra.frontMatter.layout || DEFAULT_LAYOUT}
             mdxSource={yatra.mdxSource}
             frontMatter={yatra.frontMatter}
+          />
+          <PageSEO
+            title={'ACM Team 2023-2024'}
+            description={'About the ACM NIT Surat Core team 2023-2024'}
           />
         </div>
       </div>
