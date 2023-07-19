@@ -14,11 +14,24 @@ export async function getStaticProps() {
   const swayam = await getFileBySlug('authors', ['swayam'])
   const rushil = await getFileBySlug('authors', ['rushil'])
   const ved = await getFileBySlug('authors', ['ved'])
+  const yatra = await getFileBySlug('authors', ['yatra'])
+  const raj = await getFileBySlug('authors', ['raj'])
 
-  return { props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved } }
+  return { props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved, yatra, raj } }
 }
 
-export default function About({ vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved }) {
+export default function About({
+  vinayaka,
+  garvit,
+  rutvik,
+  bhavya,
+  anushka,
+  swayam,
+  rushil,
+  ved,
+  yatra,
+  raj,
+}) {
   return (
     <>
       <PageSEO
@@ -74,6 +87,16 @@ export default function About({ vinayaka, garvit, rutvik, bhavya, anushka, swaya
             layout={ved.frontMatter.layout || DEFAULT_LAYOUT}
             mdxSource={ved.mdxSource}
             frontMatter={ved.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={raj.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={raj.mdxSource}
+            frontMatter={raj.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={yatra.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={yatra.mdxSource}
+            frontMatter={yatra.frontMatter}
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 ---
 name: Bhavya Hirani
 shortname: bhavya
-avatar: /static/images/Bhavya.jpg
+avatar: /static/images/bhavya.jpg
 occupation: Vice-Chairperson
 company: SVNIT Surat, Gujarat
 email: bhavya25hirani@gmail.com
