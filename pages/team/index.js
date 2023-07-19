@@ -7,13 +7,18 @@ const DEFAULT_LAYOUT = 'ProfileLayout'
 
 export async function getStaticProps() {
   const vinayaka = await getFileBySlug('authors', ['vinayaka'])
-  const sparrowhawk = await getFileBySlug('authors', ['sparrowhawk'])
-  const acm = await getFileBySlug('authors', ['default'])
+  const garvit = await getFileBySlug('authors', ['garvit'])
+  const rutvik = await getFileBySlug('authors', ['rutvik'])
+  const bhavya = await getFileBySlug('authors', ['bhavya'])
+  const anushka = await getFileBySlug('authors', ['anushka'])
+  const swayam = await getFileBySlug('authors', ['swayam'])
+  const rushil = await getFileBySlug('authors', ['rushil'])
+  const ved = await getFileBySlug('authors', ['ved'])
 
-  return { props: { vinayaka, sparrowhawk, acm } }
+  return { props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved } }
 }
 
-export default function About({ vinayaka, sparrowhawk, acm }) {
+export default function About({ vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved }) {
   return (
     <>
       <PageSEO
@@ -23,12 +28,37 @@ export default function About({ vinayaka, sparrowhawk, acm }) {
 
       <div className="divide-y divide-gray-700">
         <div className="space-y-2 py-4 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            The Team
+          <h1 className="text-xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Team of 2023-2024
           </h1>
         </div>
 
         <div className="xl:grid xl:grid-cols-3">
+          <MDXLayoutRenderer
+            layout={garvit.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={garvit.mdxSource}
+            frontMatter={garvit.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={bhavya.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={bhavya.mdxSource}
+            frontMatter={bhavya.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={swayam.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={swayam.mdxSource}
+            frontMatter={swayam.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={rushil.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={rushil.mdxSource}
+            frontMatter={rushil.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={anushka.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={anushka.mdxSource}
+            frontMatter={anushka.frontMatter}
+          />
           <MDXLayoutRenderer
             layout={vinayaka.frontMatter.layout || DEFAULT_LAYOUT}
             mdxSource={vinayaka.mdxSource}
@@ -36,14 +66,14 @@ export default function About({ vinayaka, sparrowhawk, acm }) {
           />
 
           <MDXLayoutRenderer
-            layout={sparrowhawk.frontMatter.layout || DEFAULT_LAYOUT}
-            mdxSource={sparrowhawk.mdxSource}
-            frontMatter={sparrowhawk.frontMatter}
+            layout={rutvik.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={rutvik.mdxSource}
+            frontMatter={rutvik.frontMatter}
           />
           <MDXLayoutRenderer
-            layout={acm.frontMatter.layout || DEFAULT_LAYOUT}
-            mdxSource={acm.mdxSource}
-            frontMatter={acm.frontMatter}
+            layout={ved.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={ved.mdxSource}
+            frontMatter={ved.frontMatter}
           />
         </div>
       </div>

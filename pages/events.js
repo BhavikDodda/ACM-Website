@@ -18,7 +18,7 @@ export default function Events() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
+          <div className="-m-4 mx-auto flex flex-wrap">
             {eventsData.map((d) => (
               <Card
                 key={d.title}

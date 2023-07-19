@@ -1,8 +1,8 @@
 ---
-name: vinayaka Iyer
+name: Vinayaka Iyer
 shortname: vinayaka
 avatar: /static/images/vinayaka.jpg
-occupation: Btech. CSE Student
+occupation: Developer
 company: SVNIT Surat, Gujarat
 email: vinayakaiyer999@gmail.com
 twitter: https://twitter.com/vinayaka_iyer9
