@@ -70,7 +70,7 @@ export default function Tabs() {
                 )
               }
             >
-              {category}
+              <a className="text-xl">{category}</a>
             </Tab>
           ))}
         </Tab.List>

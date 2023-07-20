@@ -20,7 +20,7 @@ const AccordionItem = ({ header, ...rest }) => (
     {...rest}
     header={({ state: { isEnter } }) => (
       <>
-        {header}
+        <h1 className="text-xl">{header}</h1>
         <p
           className={`ml-auto transition-transform duration-200 ease-out ${
             isEnter && 'rotate-180'
