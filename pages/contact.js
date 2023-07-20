@@ -15,10 +15,10 @@ export default function Contact() {
           acceptCharset="UTF-8"
           method="POST"
           action="https://getform.io/f/108dc72c-f9f3-4195-9f5e-ad76f30273aa"
-          className="space-y-8"
+          className="space-y-4"
         >
-          <div className="flex w-full items-center gap-3">
-            <div className="flex-1">
+          <div className="flex w-full items-center gap-4 max-sm:flex-col">
+            <div className="w-full flex-1">
               <label
                 htmlFor="admission"
                 className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -34,7 +34,7 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className="flex-1">
+            <div className="w-full flex-1">
               <label
                 htmlFor="name"
                 className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -51,8 +51,8 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="flex w-full items-center gap-3">
-            <div className="flex-1">
+          <div className="flex w-full items-center gap-4 max-sm:flex-col">
+            <div className="w-full flex-1">
               <label
                 htmlFor="email"
                 className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -68,7 +68,7 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className="flex-1">
+            <div className="w-full flex-1">
               <label
                 htmlFor="phone"
                 className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
