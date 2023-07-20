@@ -11,17 +11,17 @@ export default function Hero() {
             <br />
             NIT SURAT
           </h1>
-          <p className="mt-6 mb-8 text-lg sm:mb-12">
+          <p className="mt-6 mb-8 text-lg italic sm:mb-12">
             Learning never exhausts the mind .
-            <p className="text-center lg:text-right"> - Leonardo Da Vinci</p>
+            <p className="text-center italic lg:text-right"> - Leonardo Da Vinci</p>
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-center sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <Link href="/contact">
+            <Link href="/team">
               <button
                 className="rounded bg-primary-500 px-8 py-3 text-lg font-semibold text-white hover:bg-primary-700
                 dark:hover:bg-primary-400 "
               >
-                Get in Touch &rarr;
+                Get to know us &rarr;
               </button>
             </Link>
           </div>
