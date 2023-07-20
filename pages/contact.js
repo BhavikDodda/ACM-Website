@@ -17,7 +17,7 @@ export default function Contact() {
           action="https://getform.io/f/108dc72c-f9f3-4195-9f5e-ad76f30273aa"
           className="space-y-4"
         >
-          <div className="flex w-full items-center gap-4 max-sm:flex-col">
+          <div className="max-sm:flex-col flex w-full items-center gap-4">
             <div className="w-full flex-1">
               <label
                 htmlFor="admission"
@@ -51,7 +51,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="flex w-full items-center gap-4 max-sm:flex-col">
+          <div className="max-sm:flex-col flex w-full items-center gap-4">
             <div className="w-full flex-1">
               <label
                 htmlFor="email"
