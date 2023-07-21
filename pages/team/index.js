@@ -2,6 +2,7 @@ import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
 import PageTitle from '@/components/PageTitle'
 import { PageSEO } from '@/components/SEO'
+import { Reveal } from '@/components/Reveal'
 
 const DEFAULT_LAYOUT = 'ProfileLayout'
 
@@ -44,7 +45,6 @@ export default function About({
             Team of 2023-2024
           </h1>
         </div>
-
         <div className="xl:grid xl:grid-cols-3">
           <MDXLayoutRenderer
             layout={garvit.frontMatter.layout || DEFAULT_LAYOUT}

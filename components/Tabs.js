@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import AccordionComponent from './AccordionComponent'
+import { Reveal } from './Reveal'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -58,31 +59,43 @@ export default function Tabs() {
   })
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-2 py-16 sm:px-0">
-      <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-t-xl dark:bg-gray-900/20">
-          {Object.keys(categories).map((category) => (
-            <Tab
-              key={category}
-              className={({ selected }) =>
-                classNames(
-                  'w-full rounded-t-xl py-2.5 text-sm font-medium leading-5 dark:text-gray-100 ',
-                  selected ? 'border bg-inherit focus:outline-none' : 'bg-gray-400/[0.12]'
-                )
-              }
-            >
-              <a className="text-xl">{category}</a>
-            </Tab>
-          ))}
-        </Tab.List>
-        <Tab.Panels className="">
-          {Object.values(categories).map((posts, idx) => (
-            <Tab.Panel key={idx} className={classNames('bg-gray rounded-xl-400')}>
-              <AccordionComponent element={posts} />
-            </Tab.Panel>
-          ))}
-        </Tab.Panels>
-      </Tab.Group>
-    </div>
+    <>
+      <div className="mx-auto w-full max-w-3xl px-2 pt-8 pb-16 sm:px-0">
+        <div className="container mx-auto mb-4 flex flex-col items-center pb-6 md:p-10 md:px-12">
+          <Reveal>
+            <h1 className="leadi text-center text-4xl font-semibold">What they say about us</h1>
+          </Reveal>
+        </div>
+        <Tab.Group>
+          <Tab.List className="flex space-x-1 rounded-t-xl dark:bg-gray-900/20">
+            {Object.keys(categories).map((category) => (
+              <Tab
+                key={category}
+                className={({ selected }) =>
+                  classNames(
+                    'w-full rounded-t-xl py-2.5 text-sm font-medium leading-5 dark:text-gray-100 ',
+                    selected ? 'border bg-inherit focus:outline-none' : 'bg-gray-400/[0.12]'
+                  )
+                }
+              >
+                <a className="text-xl">{category}</a>
+              </Tab>
+            ))}
+          </Tab.List>
+          <Tab.Panels className="">
+            {Object.values(categories).map((posts, idx) => (
+              <Tab.Panel key={idx} className={classNames('bg-gray rounded-xl-400')}>
+                <AccordionComponent element={posts} />
+              </Tab.Panel>
+            ))}
+          </Tab.Panels>
+        </Tab.Group>
+      </div>
+      <div className="container mx-auto mb-4 flex flex-col items-center pb-6 md:p-10 md:px-12">
+        <Reveal>
+          <h1 className="leadi pt-8 text-center text-4xl font-semibold">What you can expect</h1>
+        </Reveal>
+      </div>
+    </>
   )
 }

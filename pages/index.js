@@ -23,12 +23,7 @@ export default function Home({ posts }) {
 
       <Hero />
 
-      <h1 className="leadi text-center text-4xl font-semibold">What we do</h1>
-      <div className="container mx-auto">
-        <Tabs />
-      </div>
-
-      <h1 className="leadi text-center text-4xl font-semibold">What you can expect</h1>
+      <Tabs />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
