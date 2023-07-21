@@ -63,7 +63,7 @@ export default function Tabs() {
       <div className="mx-auto w-full max-w-3xl px-2 pt-8 pb-16 sm:px-0">
         <div className="container mx-auto mb-4 flex flex-col items-center pb-6 md:p-10 md:px-12">
           <Reveal>
-            <h1 className="leadi text-center text-4xl font-semibold">What they say about us</h1>
+            <h1 className="leadi text-center text-4xl font-semibold">What we do</h1>
           </Reveal>
         </div>
         <Tab.Group>
