@@ -12,7 +12,8 @@ export default function Tabs() {
       {
         id: 1,
         header: 'Development Workshops',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptas',
+        content:
+          'ACM conducts development workshops on popular and emerging technology to get you started with your development journey',
       },
       {
         id: 2,
@@ -77,7 +78,7 @@ export default function Tabs() {
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className={classNames('bg-gray rounded-xl-400')}>
-              <AccordionComponent />
+              <AccordionComponent element={posts} />
             </Tab.Panel>
           ))}
         </Tab.Panels>

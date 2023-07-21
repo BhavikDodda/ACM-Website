@@ -16,9 +16,10 @@ export async function getStaticProps() {
   const ved = await getFileBySlug('authors', ['ved'])
   const yatra = await getFileBySlug('authors', ['yatra'])
   const raj = await getFileBySlug('authors', ['raj'])
+  const manav = await getFileBySlug('authors', ['manav'])
 
   return {
-    props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved, yatra, raj },
+    props: { vinayaka, garvit, rutvik, bhavya, anushka, swayam, rushil, ved, yatra, raj, manav },
   }
 }
 
@@ -33,12 +34,13 @@ export default function About({
   ved,
   yatra,
   raj,
+  manav,
 }) {
   return (
     <>
       <div className="divide-y divide-gray-700">
         <div className="space-y-2 py-4 md:space-y-5">
-          <h1 className="text-xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Team of 2023-2024
           </h1>
         </div>
@@ -68,6 +70,11 @@ export default function About({
             layout={anushka.frontMatter.layout || DEFAULT_LAYOUT}
             mdxSource={anushka.mdxSource}
             frontMatter={anushka.frontMatter}
+          />
+          <MDXLayoutRenderer
+            layout={manav.frontMatter.layout || DEFAULT_LAYOUT}
+            mdxSource={manav.mdxSource}
+            frontMatter={manav.frontMatter}
           />
           <MDXLayoutRenderer
             layout={vinayaka.frontMatter.layout || DEFAULT_LAYOUT}

@@ -54,6 +54,11 @@ export default function Footer() {
                     <span className="cursor-pointer hover:text-primary-400">About</span>
                   </Link>
                 </li>
+                <li>
+                  <Link href="/contact">
+                    <span className="cursor-pointer hover:text-primary-400">Contact</span>
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="col-span-6 text-center md:col-span-4 md:text-left">

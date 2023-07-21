@@ -16,12 +16,12 @@ export default function Hero() {
             <p className="text-center italic lg:text-right"> - Leonardo Da Vinci</p>
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-center sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <Link href="/team">
+            <Link href="/contact">
               <button
                 className="rounded bg-primary-500 px-8 py-3 text-lg font-semibold text-white hover:bg-primary-700
                 dark:hover:bg-primary-400 "
               >
-                Get to know us &rarr;
+                Get in touch &rarr;
               </button>
             </Link>
           </div>

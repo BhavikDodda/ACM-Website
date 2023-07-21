@@ -41,11 +41,12 @@ const AccordionItem = ({ header, ...rest }) => (
   />
 )
 
-export default function AccordionComponent() {
+export default function AccordionComponent(props) {
+  const items = props.element
   return (
     <div className="rounded-lg border">
       {/* `transitionTimeout` prop should be equal to the transition duration in CSS */}
-      <Accordion transition transitionTimeout={200}>
+      <Accordion transition transitionTimeout={300}>
         {items.map(({ header, content }, i) => (
           <AccordionItem header={header} key={i}>
             {content}
