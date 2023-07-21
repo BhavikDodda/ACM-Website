@@ -45,7 +45,7 @@ export default function About({
             Team of 2023-2024
           </h1>
         </div>
-        <div className="xl:grid xl:grid-cols-3">
+        <div className="mx-auto xl:grid xl:grid-cols-3">
           <MDXLayoutRenderer
             layout={garvit.frontMatter.layout || DEFAULT_LAYOUT}
             mdxSource={garvit.mdxSource}
