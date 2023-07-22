@@ -18,7 +18,7 @@ export default function AuthorLayout({ children, frontMatter }) {
         </div> */}
       {/* <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"> */}
       <div className="flex flex-col items-center pt-8">
-        <Link href="/team/[shortname]" as={`team/${shortname}`}>
+        {/* <Link href="/team/[shortname]" as={`team/${shortname}`}>
           <Image
             src={avatar}
             alt="avatar"
@@ -26,7 +26,24 @@ export default function AuthorLayout({ children, frontMatter }) {
             height="192px"
             className="h-48 w-48 cursor-pointer rounded-full"
           />
-        </Link>
+        </Link> */}
+        <div className="group h-fit">
+          <div className="relative overflow-hidden">
+            <Image
+              className="h-48 w-48 cursor-pointer rounded-full object-cover"
+              src={avatar}
+              width="192px"
+              height="192px"
+            />
+            <div className="absolute -bottom-10 flex h-full w-full items-center justify-center rounded-full opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100 dark:hover:bg-black/30">
+              <button className="rounded-full bg-black py-2 px-5 text-white opacity-50">
+                <Link href="/team/[shortname]" as={`team/${shortname}`}>
+                  See more
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
         <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
