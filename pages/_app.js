@@ -13,6 +13,7 @@ import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
+import NextNProgress from 'nextjs-progressbar'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
@@ -49,6 +50,7 @@ export default function App({ Component, pageProps }) {
             }}
           >
             <Component {...pageProps} />
+            <NextNProgress options={{ showSpinner: false }} />
           </motion.div>
         </AnimatePresence>
       </LayoutWrapper>
