@@ -3,7 +3,7 @@ name: Bhavya Hirani
 shortname: bhavya
 avatar: /static/images/bhavya.jpg
 occupation: Vice-Chairperson
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: bhavya25hirani@gmail.com
 twitter:
 linkedin: https://www.linkedin.com/in/bhavya-hirani-157038224/

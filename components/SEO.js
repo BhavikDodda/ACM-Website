@@ -14,11 +14,11 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
-      {ogImage.constructor.name === 'Array' ? (
+      {/* {ogImage.constructor.name === 'Array' ? (
         ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
       ) : (
         <meta property="og:image" content={ogImage} key={ogImage} />
-      )}
+      )} */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={siteMetadata.twitter} />
       <meta name="twitter:title" content={title} />
@@ -91,12 +91,12 @@ export const BlogSEO = ({
       ? [images]
       : images
 
-  const featuredImages = imagesArr.map((img) => {
-    return {
-      '@type': 'ImageObject',
-      url: img.includes('http') ? img : siteMetadata.siteUrl + img,
-    }
-  })
+  // const featuredImages = imagesArr.map((img) => {
+  //   return {
+  //     '@type': 'ImageObject',
+  //     url: img.includes('http') ? img : siteMetadata.siteUrl + img,
+  //   }
+  // })
 
   let authorList
   if (authorDetails) {
@@ -121,7 +121,7 @@ export const BlogSEO = ({
       '@id': url,
     },
     headline: title,
-    image: featuredImages,
+    // image: featuredImages,
     datePublished: publishedAt,
     dateModified: modifiedAt,
     author: authorList,
@@ -136,7 +136,7 @@ export const BlogSEO = ({
     description: summary,
   }
 
-  const twImageUrl = featuredImages[0].url
+  // const twImageUrl = featuredImages[0].url
 
   return (
     <>
@@ -144,8 +144,8 @@ export const BlogSEO = ({
         title={title}
         description={summary}
         ogType="article"
-        ogImage={featuredImages}
-        twImage={twImageUrl}
+        // ogImage={featuredImages}
+        // twImage={twImageUrl}
         canonicalUrl={canonicalUrl}
       />
       <Head>

@@ -23,7 +23,9 @@ const Reviews = () => {
                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
               </svg>
               <p className="px-10 py-1 text-lg ">
-                Congratulations ACM NIT Surat team. You guys have have lots of potential,Keep it up!
+                ACM NIT Surat chapter has been an incredible platform for me to enhance my technical
+                skills; the engaging workshops and coding competitions have been both educational
+                and fun!
               </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +38,7 @@ const Reviews = () => {
               </svg>
             </div>
             <span className="my-2 h-1 w-12 rounded-lg bg-primary-500"></span>
-            <p>Sparrowhawk</p>
+            <p>Anand</p>
           </div>
           <div className="mx-12 flex max-w-lg flex-col items-center border-2 border-primary-500 py-8 px-4 dark:border-none dark:bg-black lg:mx-0">
             <div className="relative text-center">
@@ -55,8 +57,9 @@ const Reviews = () => {
                 ></path>
               </svg>
               <p className="px-10 py-1 text-lg">
-                I'm comfortable saying that the current ACM NIT Surat team is the greatest of all
-                time.
+                "I am impressed with ACM NIT Surat's welcoming community, where I've made valuable
+                connections and had the chance to participate in exciting coding competitions and
+                hackathons.
               </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +77,7 @@ const Reviews = () => {
               </svg>
             </div>
             <span className="my-2 h-1 w-12 rounded-lg bg-primary-500"></span>
-            <p>Cassablanca</p>
+            <p>Arjun</p>
           </div>
         </div>
       </Reveal>

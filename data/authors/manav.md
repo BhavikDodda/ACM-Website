@@ -1,9 +1,9 @@
 ---
-name: Manav Vrajlal Chauhan
+name: Manav Chauhan
 shortname: manav
 avatar: /static/images/manav.jpg
 occupation: Treasurer
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: manavchauhan515@gmail.com
 twitter: https://twitter.com/upcominturf
 linkedin: https://www.linkedin.com/in/manav-chauhan-1b4577250/

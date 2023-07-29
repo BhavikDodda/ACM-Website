@@ -3,7 +3,7 @@ name: Raj Modh
 shortname: raj
 avatar: /static/images/raj.jpg
 occupation: Designer
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: rajmodh22@gmail.com
 twitter:
 linkedin: https://www.linkedin.com/in/raj-modh-52b92a132

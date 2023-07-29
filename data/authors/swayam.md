@@ -3,7 +3,7 @@ name: Swayam Desai
 shortname: swayam
 avatar: /static/images/swayam.jpg
 occupation: Secretary
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: swayamdesai62@gmail.com
 twitter:
 linkedin: https://www.linkedin.com/in/swayam-desai-a09886223/

@@ -3,7 +3,7 @@ name: Ved Chadderwala
 shortname: ved
 avatar: /static/images/ved.jpg
 occupation: Core Member
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: ved29022004@gmail.com
 twitter:
 linkedin: https://www.linkedin.com/in/ved-chadderwala-196529223/
