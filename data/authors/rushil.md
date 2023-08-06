@@ -3,7 +3,7 @@ name: Rushil Jariwala
 shortname: rushil
 avatar: /static/images/rushil.jpg
 occupation: Secretary
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: rkjjariwala@gmail.com
 twitter: https://twitter.com/rushil_jariwala
 linkedin: https://www.linkedin.com/in/rushil-jariwala/

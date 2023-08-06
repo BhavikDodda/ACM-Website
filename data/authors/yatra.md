@@ -1,9 +1,9 @@
 ---
-name: Yatra A Vaghasia
+name: Yatra Vaghasia
 shortname: yatra
 avatar: /static/images/yatra.jpg
 occupation: Editor
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: yatravaghasiahriday@gmail.com
 twitter:
 linkedin: https://www.linkedin.com/in/yatravaghasia/

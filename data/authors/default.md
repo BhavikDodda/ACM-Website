@@ -2,14 +2,11 @@
 name: ACM NIT Surat
 avatar: /static/images/acm-logo.png
 occupation: Student Chapter
-company: Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat
+company:
 email: acmnitsurat@gmail.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+twitter:
+linkedin: https://www.linkedin.com/company/acmnitsurat
+github: https://github.com/acm-svnit
 ---
 
-ACM is an International Learned Society for Computing. It has its chapters in various institutes. NIT Surat ACM student chapter is one of them. ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges.
-
-Founded in 2005, the chapter has been a centre for various learning, fun, and productive activities. Be it coding challenges, hackathons, quizzes, or application development, the chapter has done its best. The activities of the chapter are widely acknowledged in the institute and keenly looked for. Massive turnout at every event shows the range of popularity the chapter has.
-The bar is being raised year after year. With announcement of Epiphany, CTF! in Quest, and other challenges as open-for-all contests, the chapter is aiming nationwide recognition.
+ACM NIT Surat student chapter, established in 2005, is an integral part of the International Learned Society for Computing, ACM. Comprising a dedicated team of computing educators, researchers, and professionals, the chapter aims to inspire dialogue, resource-sharing, and tackling challenges in the field of computing. Through a wide array of engaging activities like coding challenges, hackathons, quizzes, and application development, the chapter has fostered an environment of learning, fun, and productivity. Its reputation within the institute is exceptional, evident from the massive turnout at every event. With its ambitious goals, including the nationwide recognition of events like Epiphany and Dotslash, ACM NIT Surat is constantly raising the bar and making a significant impact in the world of technology and education.

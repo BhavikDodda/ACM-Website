@@ -3,7 +3,7 @@ name: Vinayaka Iyer
 shortname: vinayaka
 avatar: /static/images/vinayaka.jpg
 occupation: Developer
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: vinayakaiyer999@gmail.com
 twitter: https://twitter.com/vinayaka_iyer9
 linkedin: https://www.linkedin.com/in/vinayaka-iyer/

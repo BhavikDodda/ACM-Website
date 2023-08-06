@@ -3,7 +3,7 @@ name: Anushka Kundu
 shortname: anushka
 avatar: /static/images/anushka.jpg
 occupation: Treasurer
-company: SVNIT Surat, Gujarat
+company: ACM NIT Surat
 email: anu.kundu03@gmail.com
 twitter: https://twitter.com/KunduAnushka_
 linkedin: https://www.linkedin.com/in/anushka-kundu-691518229/
