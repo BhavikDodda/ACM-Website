@@ -30,10 +30,10 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="xl:h-112 2xl:h-128 mt-8 flex h-72 items-center justify-center p-6 sm:h-80 lg:mt-0 lg:h-96">
+        <div className="xl:h-112 2xl:h-128 mt-4 flex h-72 items-center justify-center sm:h-80 lg:mt-0 lg:h-96">
           <Reveal>
             <Image
-              src="/static/images/coreteam.jfif"
+              src="/static/images/acm-group-photo.jpg"
               className="xl:h-112 2xl:h-128 h-72 object-contain sm:h-80 lg:h-96"
               height="550"
               width="550"

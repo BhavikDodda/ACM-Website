@@ -11,7 +11,7 @@ const Reviews = () => {
       </div>
       <Reveal>
         <div className="container mx-auto grid grid-cols-1 gap-8 md:px-10 md:pb-10 lg:grid-cols-2 lg:gap-20">
-          <div className=" mx-12 flex flex-col items-center border-2 border-primary-500 py-8 px-4  dark:border-none dark:bg-black lg:mx-0">
+          <div className=" mx-4 flex flex-col items-center border-2 border-primary-500 py-8 px-4  dark:border-none dark:bg-black lg:mx-0">
             <div className="relative text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const Reviews = () => {
             <span className="my-2 h-1 w-12 rounded-lg bg-primary-500"></span>
             <p>Anand</p>
           </div>
-          <div className="mx-12 flex max-w-lg flex-col items-center border-2 border-primary-500 py-8 px-4 dark:border-none dark:bg-black lg:mx-0">
+          <div className="mx-4 flex max-w-lg flex-col items-center border-2 border-primary-500 py-8 px-4 dark:border-none dark:bg-black lg:mx-0">
             <div className="relative text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,5 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import { Reveal } from '@/components/Reveal'
 import { getFileBySlug } from '@/lib/mdx'
 
 const DEFAULT_LAYOUT = 'AuthorLayout'
@@ -18,12 +19,13 @@ export default function About({ authorDetails }) {
           About
         </h1>
       </div>
-
-      <MDXLayoutRenderer
-        layout={frontMatter.layout || DEFAULT_LAYOUT}
-        mdxSource={mdxSource}
-        frontMatter={frontMatter}
-      />
+      <Reveal>
+        <MDXLayoutRenderer
+          layout={frontMatter.layout || DEFAULT_LAYOUT}
+          mdxSource={mdxSource}
+          frontMatter={frontMatter}
+        />
+      </Reveal>
     </>
   )
 }
