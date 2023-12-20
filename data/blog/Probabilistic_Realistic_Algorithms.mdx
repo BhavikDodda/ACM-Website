@@ -1,0 +1,78 @@
+---
+title: 'Understanding Probabilistic Analysis and Randomized Algorithms'
+date: '2023-08-13'
+tags: ['wordpress', 'github']
+draft: false
+authors: ['bhavya']
+summary: 'I guess it comes down to a simple choice really: Get busy living, or get busy dying. Andy Dufresne, “Shawshank redemption” Let us consider a man called Boris who has an algorithm. To determine its practicality, Boris might want to estimate its run time. This is standard practice for people in Computer Science. They always…'
+---
+
+> "I guess it comes down to a simple choice really: Get busy living, or get busy dying."
+
+- Andy Dufresne, “Shawshank Redemption”
+
+Let us consider a man called Boris who has an algorithm. To determine its practicality, Boris might want to estimate its run time. This is standard practice for people in Computer Science. They always want to, or rather need to, be able to figure out if their algorithm is actually “good”.
+
+Usually, it is rather simple to determine how many times a certain statement in the algorithm is being executed, or whether or not it will be executed at all (given there aren’t any bugs). However, there might be operations that are executed only if a certain condition is met, or if a certain case is satisfied, in which case, the number of times that statement is executed depends on what the input is. The real problem comes when that operation has a very high cost – so much so, that the running time of your algorithm majorly depends on the frequency of execution for that operation (just like how the rate of a reaction is determined by the rate of its slowest step) - but its frequency can’t be directly calculated because there’s no way we know what the input is. It’s not under our control. Which begs the question, how might I predict the outcome, if the inputs themselves are unpredictable?
+
+One way to do it could be to average the running time over all possible inputs and report it as the average case running time. i.e. we write down an expression in n (the input size) for every case, and then take an average of all those expressions. But summing and dividing by n is just a special case of taking the expected value (the kind we study in probability) of the number of hires – the case in which we have a uniform distribution.
+
+Probabilistic analysis is when we take the input distribution into account and make an estimate of the running time (or some other quantity like the total cost of hiring in this case) using probabilities.
+
+Here is an example: Consider the HIRE_ASSISTANT problem, where we’re given a list of candidates (in terms of their ranks) that are to interview for an assistant’s job, and after each interview, we want the currently appointed assistant to be the best so far. Hence, we hire any candidate that has a better rank than the currently appointed assistant.
+
+Assume that we hire m out of n people and that the cost of hiring Ch is very high; hence we’re concerned only with calculating the total time spent on “hire candidate” operations. (called a cost analysis)
+
+Now there is no way, with the little information we have, to know this frequency, because we may hire no one (candidates in decreasing order of rank), hire everyone (candidates in increasing order of rank), or something in between, depending on the order of the candidates. Let us use probabilities to get an answer.
+
+## Probabilistic Analysis
+
+One thing we can do is assume that the order of assistants is completely random, which is one way of saying the input has a uniform distribution – for that is the a priori assumption we make when we know nothing about the input.
+
+Hence, the expected value for the running time = Σ (expected value for the number of hires) x (cost of one hire)
+
+Since the order of candidates is random, in the first i candidates, any one of them could be the most qualified. Hence, the probability that candidate i will get selected is p = 1/i (it is the most qualified amongst all candidates till that one).
+
+We could now go ahead and apply the formula for the expected number of hires as :
+
+\sum_x x \cdot \pr X=x
+
+where \( X \) is a random variable that represents the number of hires.
+
+However, the above is cumbersome. Consider an easier approach:
+
+Let a random variable Xi be 1 if candidate i is selected, 0 otherwise
+
+X = sum of Xi’s
+
+E(X) = E(X1) + E(X2) + …
+
+E(X) = Σ E(Xi) from i = 1 to i=n
+
+but E(Xi) is 1 \* (1/i) + 0 = 1/i
+
+therefore, E(X) = Σ (1/i)
+
+We can prove, by breaking down the above summation into log(n) different parts, that it has an upper bound of log(n). ( you’re gonna have to take a leap of faith and believe me here)
+
+Hence, if the inputs are already in a uniform distribution, the average case running time of HIRE_ASSISTANT is O(Log n).
+
+Now, why is this the average case? Note that log n is the upper bound for the expected value of the number of hires and not the number of hires itself. The input is random, but that doesn’t exclude possibilities like them all being in ascending order (n hires);
+
+Hence, log n is the average case running time.
+
+## Randomized Algorithms
+
+Did you spot an issue with the previous method? We assumed that the input had a uniform distribution, and reported a running time of O(Log n). However, the input distribution could have been anything. It could have been a gamma distribution, in which case, presumably, for most inputs, the actual running time won’t be consistent with our assumption of O(Log n)! Because the formula for probability now changes. The expected value is no longer log (n)!
+
+So Boris thought how might he become sure of the input distribution. And after some thinking, he said: well, if I don’t know what the distribution is, I’ll impose one on the input!
+
+That is exactly what randomized algorithms do. They take the set of inputs and make the algorithm itself randomize the inputs before processing them further. i.e. no matter what distribution the input is in originally, after the first randomization step of our algorithm, it will turn into, say, a uniform distribution, which will help us analyze the running time with probabilistic analysis.
+
+Continuing the analogy, we might ask the pool of candidates to play a tournament of rock-paper-scissors to find out who will interview next.
+
+The running time of such algorithms, which randomize the inputs before processing further, is given the name expected running time. Note, that both average-case and expected running times are going to be calculated in a similar manner – that is using probabilistic analysis – it’s just that one of them will assume the input is already in a uniform distribution (the average-case running time) and the other is associated to an algorithm that imposes a distribution on the input before processing it. We use different terms for both so as to make the difference in the type of algorithms used in both cases clear. The second algorithm does an extra step. Also, note that since we’re concerned only with the “hire assistant” operation, the extra randomizing step won’t affect our running time prediction.
+
+Ultimately, the agenda is to be able to be sure that most times a program runs, the running times will be according to our analysis, for which we must be sure what distribution they are in.
+
+That’s it! hope I could provide an intuitive explanation of the above topic. I’ve heavily used the book Introduction to Algorithms, Authored by Dr. Thomas H. Cormen, Dr. Charles E. Leiserson, Dr. Ronald L. Rivest, and Dr. Clifford Stein, as a reference. The hiring problem example and my understanding of the topic came majorly from this book. So please do have a look at it if you’re interested in diving deeper into algorithms! I would encourage you guys to leave any suggestions or critiques in the comments section, for that will enormously help me improve my writing. I plan to post once a week. Until then, keep pushing:)
