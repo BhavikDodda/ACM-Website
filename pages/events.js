@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import eventsData from '@/data/eventsData'
-import Card from '@/components/Card'
+import EventCard from '@/components/EventCard'
 import { PageSEO } from '@/components/SEO'
 import { Reveal } from '@/components/Reveal'
 
@@ -23,12 +23,14 @@ export default function Events() {
         <div className="container py-12">
           <div className="-m-4 mx-auto flex flex-wrap">
             {eventsData.map((d) => (
-              <Card
+              <EventCard
                 key={d.title}
                 title={d.title}
                 description={d.description}
+                date={d.date}
                 imgSrc={d.imgSrc}
                 href={d.href}
+                photos={d.photos}
               />
             ))}
           </div>
