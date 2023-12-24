@@ -11,7 +11,7 @@ const eventsData = [
     title: 'Open Source Workshop',
     description: `ACM NIT Surat brings to you an open source and hands-on introduction to Git/Github workshop. Participants will be able to experience the thrill of contributing
     to real-world open source projects, putting them in a good position for Hacktober Fest 2023`,
-    imgSrc: '/static/images/openSource.jpg',
+    imgSrc: '/static/images/opensource.jpg',
     href: 'https://www.instagram.com/p/Cx2043MtAf1/',
   },
   {
