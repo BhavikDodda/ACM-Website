@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer>
+    <SectionContainer className>
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           <div>

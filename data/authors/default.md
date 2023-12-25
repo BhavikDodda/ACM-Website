@@ -1,9 +1,9 @@
 ---
 name: ACM NIT Surat
-avatar: /static/images/acm-logo.png
+avatar: /static/images/acm-nitsurat-custom-logo.png
 occupation: Student Chapter
 company:
-email: acmnitsurat@gmail.com
+email: acm@svnit.ac.in
 twitter:
 linkedin: https://www.linkedin.com/company/acmnitsurat
 github: https://github.com/acm-svnit

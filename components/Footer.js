@@ -66,12 +66,12 @@ export default function Footer() {
               <ul>
                 <li className="my-3">
                   <a href="#" className="hover:text-primary-400">
-                    📞 +91 12345 43210
+                    📞 +91 79775 79577
                   </a>
                 </li>
                 <li className="my-3">
                   <a href="#" className="hover:text-primary-400">
-                    ✉️ acmnitsurat@gmail.com
+                    ✉️ acm@svnit.ac.in
                   </a>
                 </li>
                 <li className="my-3">
