@@ -4,15 +4,15 @@ import TeamMemberCard from '@/components/TeamCard'
 import { Reveal } from '@/components/Reveal'
 
 const Team = () => {
-  const initialTeamMembers = allteams.filter((member) => member.year === 2023)
+  const initialTeamMembers = allteams.filter((member) => member.year === 2024)
 
   const [teamMembers, setTeamMembers] = useState(initialTeamMembers)
-  const [selectedYear, setSelectedYear] = useState(2023)
+  const [selectedYear, setSelectedYear] = useState(2024)
 
   const filterByYear = (year) => {
     if (year === selectedYear) {
       // If the same year is clicked again, remove the filter
-      setSelectedYear(2023)
+      setSelectedYear(2024)
       setTeamMembers(initialTeamMembers)
     } else {
       // Filter the data by the selected year
@@ -22,7 +22,9 @@ const Team = () => {
     }
   }
 
-  const availYears = [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  const availYears = [
+    2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,
+  ]
 
   return (
     <section className="bg-white dark:bg-gray-900">
